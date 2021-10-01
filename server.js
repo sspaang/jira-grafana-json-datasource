@@ -12,8 +12,8 @@ const AnonymousStrategy = require('passport-anonymous')
 const jira = new JiraClient({
   host: process.env.JIRA_HOST,
   basic_auth: {
-    username: process.env.JIRA_USER,
-    password: process.env.JIRA_PASS
+    email: process.env.JIRA_USER,
+    api_token: process.env.JIRA_API_TOKEN
   }
 })
 
